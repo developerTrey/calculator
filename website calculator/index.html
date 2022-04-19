@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+    <script src="script-simple.js" defer></script>
+    <link rel="stylesheet" href="simple-calc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 25px;
+        }
+
+        body {
+            background-color: rgb(43, 43, 99);
+        }
+
+        #calculator-body {
+
+            display: block;
+            margin: 2rem auto;
+            width: fit-content;
+            padding: 1.5rem;
+            background-color: rgb(221, 221, 221);
+            border-radius: 0.4rem;
+        }
+
+        table,
+        th,
+        td {
+
+            border: 0px solid rgb(85, 85, 85);
+            padding: 20px;
+            border-collapse: collapse;
+
+        }
+
+        table {
+            margin: 2rem auto;
+        }
+
+        th:first-child {
+            text-align: center;
+        }
+
+        th:last-child {
+            text-align: right;
+        }
+
+        thead {
+            background-color: black;
+            color: chartreuse;
+        }
+
+        button {
+            padding: .8rem 1.5rem;
+            font-family: 'Orbitron', sans-serif;
+            border-radius: 0.6rem;
+            border-color: rgb(245, 244, 244);
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='calculator-body'>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th colspan="3">0</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button>/</button></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td class="button"><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>X</button></td>
+                </tr>
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>+</button></td>
+                </tr>
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button>-</button></td>
+                </tr>
+                <tr>
+                    <td><button>C</button></td>
+                    <td><button>0</button></td>
+                    <td><button>.</button></td>
+                    <td class="equals"><button>=</button></td>
+                </tr>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
